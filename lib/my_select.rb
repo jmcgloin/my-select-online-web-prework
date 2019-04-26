@@ -4,7 +4,7 @@ def my_select(collection)
   newArray = []
   while i < collection.count do
     newArray = yield collection[i], newArray
-    puts newArray
+    # puts newArray
     i += 1
   end
   newArray
@@ -12,6 +12,9 @@ end
 
 my_select([1,2,3,4,5]) {
   |item, newArray|
-  if item.even? then return newArray.push(item) end
+  if item.even?
+    puts newArray
+    puts item
+    return newArray.push(item)
   newArray
 }
