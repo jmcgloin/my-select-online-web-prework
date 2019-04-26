@@ -9,4 +9,4 @@ def my_select(collection)
   newArray
 end
 
-my_select([1,2,3,4,5]) { |item, newArray| puts newArray.count; return item.even? ? newArray.push(item) : newArray }
+my_select([1,2,3,4,5]) { |item, newArray| puts newArray.count; puts item; return item.even? ? newArray.push(item) : newArray }
