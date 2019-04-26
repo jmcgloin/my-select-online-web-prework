@@ -15,7 +15,7 @@ my_select([1,2,3,4,5]) {
   if item.even?
     puts "newarray is #{newArray}"
     newArray.push(item)
-    putse "newarray is now #{newArray}"
+    puts "newarray is now #{newArray}"
     return newArray
   end
   newArray
