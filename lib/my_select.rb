@@ -4,6 +4,7 @@ def my_select(collection)
   newArray = []
   while i < collection.count do
     newArray = yield collection[i], newArray
+    i += 1
   end
   newArray
 end
