@@ -13,7 +13,7 @@ end
 my_select([1,2,3,4,5]) {
   |item, newArray|
   if item.even?
-    puts newArray
+    puts "newarray is #{newArray}"
     puts item
     return newArray.push(item)
   end
