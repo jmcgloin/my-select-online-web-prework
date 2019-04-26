@@ -16,5 +16,6 @@ my_select([1,2,3,4,5]) {
     puts newArray
     puts item
     return newArray.push(item)
+  end
   newArray
 }
