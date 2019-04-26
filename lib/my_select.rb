@@ -4,7 +4,7 @@ def my_select(collection)
   newArray = []
   while i < collection.count do
     newArray = yield collection[i], newArray
-    # puts newArray
+    puts newArray
     i += 1
   end
   newArray
@@ -16,7 +16,7 @@ my_select([1,2,3,4,5]) {
     puts "newarray is #{newArray}"
     newArray.push(item)
     puts "newarray is now #{newArray}"
-    return newArray
+    newArray
   end
   newArray
 }
